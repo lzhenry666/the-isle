@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <meta charset="utf-8">
+    <title>The Isle - info: CALCULADORA DE DANO</title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png?v=qABE66X3wp">
+    <meta name="author" content="Lzhenry666" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png?v=qABE66X3wp">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png?v=qABE66X3wp">
+    <link rel="manifest" href="/img/favicon/site.webmanifest?v=qABE66X3wp">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg?v=qABE66X3wp" color="#000000">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico?v=qABE66X3wp">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#2f3742">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/vendors.css">
+    <link rel="stylesheet" href="css.css">
+
+</head>
+
+<body>
+    <div class="tingle-content-wrapper wrap-site">
+        <div class="lazyload wrap-site__bg" data-bg="url(/img/media/bg-1.jpg)"></div>
+        <header class="header">
+            <div class="wrap">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <a class="header__logo" href="index.html">
+							<img src="img/theme/tyranocode.png">s
+						</a>
+                    </div>
+                    <div class="col-auto">
+                        <div class="header__title">The Isle - Info</div>
+                    </div>
+                    <div class="col-auto ml-auto">
+                        <button class="d-lg-none menu-trigger menu-trigger--pos-header" type="button"><i
+                                class="menu-trigger__icon"></i>
+                        </button>
+                        <nav class="top-nav">
+                            <div class="top-nav__scroll">
+                                <ul class="top-nav__list">
+                                    <li class="top-nav__item"><a class="top-nav__link" href="damagecalculator.html">Dmg Calculator</a>
+                                            </li>
+                                            <li class="top-nav__item"><a class="top-nav__link" href="map-v-three.html">Map v3</a>
+                                            </li>
+                                            <li class="top-nav__item"><a class="top-nav__link" href="map-thenyaw.html">Map Thenyaw</a>
+                                            </li>
+                                            <li class="top-nav__item"><a class="top-nav__link" href="map-everima.html">Map Evirima</a>
+                                            </li>
+                                            <li class="top-nav__item"><a class="top-nav__link" href="stats.html">Stats</a>
+                                            </li>
+                                            <li class="top-nav__item"><a class="top-nav__link" href="contacts.html">Contacts</a>
+                                            </li>
+                                        </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="section">
+                <div class="wrap">
+                    <h1 class="h1 mb-4">CALCULADORA DE DANO<br /> SÓ ADULTO</h1>
+                    <div class="content-style">
+
+                        <h3 class="selectDino" i="">Selecione seu Dino aqui</h3>
+                        <select class="selectYourDino round" placeholder="Select A Dino">
+
+                        </select>
+
+                        <h3 class="selectDino" >Selecione seu dino inimigo aqui</h3>
+                        <select class="selectEnemyDino round" placeholder="Select A Dino">
+
+                        </select>
+
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div id="friendly"></div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div id="enemy"></div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div id="fightResult"></div>
+                                <div id="fightResultreverse"></div>
+
+
+
+                            </div>
+                            <div class="col-sm-3">
+                                <div id="fightBleed"></div>
+                                <div id="fightBleedsit"></div>
+                                <div id="fightBleedtrot"></div>
+                                <div id="fightBleedrun"></div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div id="fightBleedreverse"></div>
+                                <div id="fightBleedsitreverse"></div>
+                                <div id="fightBleedtrotreverse"></div>
+                                <div id="fightBleedrunreverse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="wrap">
+                <div class="row align-items-center text-center">
+                    <div class="col-sm text-sm-left">
+                        <div class="footer__copyright">Inspired on <a href="https://www.theisledamage.com"
+                                target="_blank">the isle damage calculator</a> and <a
+                                href="https://antroll.github.io/the-isle-info/" target="_blank">the isle info</a>©
+                            <script>document.write(new Date().getFullYear())</script>
+                            MIT License
+                        </div>
+                        <div class="col-sm-auto my-2 my-sm-0"><a class="d-inline-flex align-items-center donate-btn"
+                                href="//paypal.me/antroll" target="_blank" data-tippy-content="via Paypal"
+                                data-tippy-placement="right">Support author <svg class="svg-icon ml-2 donate-btn__icon">
+                                    <use xlink:href="img/theme/sprite.symbol.svg#si-heart" />
+                                </svg></a>
+                        </div>
+                        <div class="col-sm text-sm-right">
+                            <div class="d-inline-flex align-items-center footer__created">Made by -<a
+                                    class="flex-shrink-0 ml-1" href="https://github.com/Antroll"
+                                    target="_blank">Lzhenry666</a>
+                                <a class="ml-3 flex-shrink-0 footer__github"
+                                    href="https://github.com/Antroll/the-isle-info" target="_blank"
+                                    data-tippy-content="Repository on Github">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="img/theme/sprite.symbol.svg" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+    <script>
+
+        $(document).ready(function () {
+            ordenarSelect();
+        });
+
+        function ordenarSelect() {
+            $("#selectYourDino, #selectEnemyDino ").html($("option", $("#selectYourDino, selectEnemyDino")).sort(function (a, b) {
+                return a.text == b.text ? 0 : a.text < b.text ? -1 : 1;
+            }));
+        };
+
+
+
+
+
+
+
+
+
+
+        /*    (Attacker Weight/Victim Weight) X (Base Damage) = Damage Dealt */
+
+
+    </script>
+    <!-- <script src="/javascript/index.js"></script> -->
+
+    <script
+        src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CObject.assign%2CArray.from%2CURLSearchParams"></script>
+    <script src="scripts/vendors.js"></script>
+    <script src="/index.js" type="module"></script>
+
+</body>
+
+</html>

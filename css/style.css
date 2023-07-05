@@ -1,0 +1,64 @@
+body {
+  color: whitesmoke;
+margin:0;}
+.content {
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+}
+header {
+  font-size: 25px;
+}
+.options {
+  width: 250px;
+  margin: auto;
+}
+.selectDino {
+  margin-top: 50px !important;
+  display: block;
+  font-size: 25px;
+}
+.selectize-dropdown-content{
+    cursor: pointer;
+}
+#friendly{
+    margin-right: 50px;
+    display: inline-block;
+}
+#enemy{
+    margin-left: 50px;
+    display: inline-block;
+}
+#friendly h3{
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    margin: 0px;
+}
+#enemy h3{
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    margin: 0px;
+}
+#friendly h2{
+    color: #15b8ce;
+    font-size: 30px;
+}
+#enemy h2{
+    color: #c02b2b;
+    font-size: 30px;
+}
+
+#fightResult{
+    font-size: 20px;
+    margin-top: 20px;
+}
+#fightBleed{
+    font-size: 20px;
+}
+.topTags a{
+  margin-right: 10px;
+  margin-left: 10px;
+}

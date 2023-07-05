@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>The Isle - info: dinosaurs stats</title>
+	<meta name="description" content>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png?v=qABE66X3wp">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png?v=qABE66X3wp">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png?v=qABE66X3wp">
+	<link rel="manifest" href="img/favicon/site.webmanifest?v=qABE66X3wp">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg?v=qABE66X3wp" color="#000000">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico?v=qABE66X3wp">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#2f3742">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="styles/vendors.css">
+	<link rel="stylesheet" href="styles/style.css?3213122">
+</head>
+
+<body>
+	<div class="tingle-content-wrapper wrap-site">
+		<div class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
+				href="//browsehappy.com/">upgrade your browser</a> to improve your experience and security.</div>
+		<div class="lazyload wrap-site__bg" data-bg="url(img/media/bg-1.jpg)"></div>
+		<header class="header">
+			<div class="wrap">
+				<div class="row align-items-center">
+					<div class="col-auto">
+						<a class="header__logo" href="index.html">
+							<img src="img/theme/tyranocode.png">s
+						</a>
+					</div>
+					<div class="col-auto">
+						<div class="header__title">The Isle - Info</div>
+					</div>
+					<div class="col-auto ml-auto">
+						<button class="d-lg-none menu-trigger menu-trigger--pos-header" type="button"><i
+								class="menu-trigger__icon"></i>
+						</button>
+						<nav class="top-nav">
+							<div class="top-nav__scroll">
+								<ul class="top-nav__list">
+									<li class="top-nav__item"><a class="top-nav__link" href="damagecalculator.html">Dmg Calculator</a>
+											</li>
+											<li class="top-nav__item"><a class="top-nav__link" href="map-v-three.html">Map v3</a>
+											</li>
+											<li class="top-nav__item"><a class="top-nav__link" href="map-thenyaw.html">Map Thenyaw</a>
+											</li>
+											<li class="top-nav__item"><a class="top-nav__link" href="map-everima.html">Map Evirima</a>
+											</li>
+											<li class="top-nav__item"><a class="top-nav__link" href="stats.html">Stats</a>
+											</li>
+											<li class="top-nav__item"><a class="top-nav__link" href="contacts.html">Contacts</a>
+											</li>
+										</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="section stats">
+				<div class="wrap">
+					<h1 class="h1 mb-5">Dinosaurs stats</h1>
+					<div class="mb-2">Game mod:</div>
+					<div class="row mb-3">
+						<div class="col-auto">
+							<label class="ui-switch">
+								<input class="visuallyhidden js-game-mod-switcher ui-switch__input" type="checkbox"
+									name="progression"><i class="ui-switch__icon"></i><span
+									class="ui-switch__text">Progression</span>
+							</label>
+						</div>
+						<div class="col-auto">
+							<label class="ui-switch">
+								<input class="visuallyhidden js-game-mod-switcher ui-switch__input" type="checkbox"
+									name="survival"><i class="ui-switch__icon"></i><span
+									class="ui-switch__text">Survival</span>
+							</label>
+						</div>
+						<div class="col-auto">
+							<label class="ui-switch">
+								<input class="visuallyhidden js-game-mod-switcher ui-switch__input" type="checkbox"
+									name="All" checked="checked"><i class="ui-switch__icon"></i><span
+									class="ui-switch__text">All</span>
+							</label>
+						</div>
+					</div>
+					<div class="content-style">
+						<div class="stats-table">
+							<table class="js-vertical-highlight js-table-sort">
+								<thead>
+									<tr>
+										<th data-sort-default>Dinosaur Name</th>
+										<th>Diet</th>
+										<th>Base Damage</th>
+										<th>Alternate Attack</th>
+										<th>Health</th>
+										<th>Mass (kg)</th>
+										<th>Speed (km/h)</th>
+										<th>Ambush (km/h)</th>
+										<th>Sprint Duration (min)</th>
+										<th>Base Bleed</th>
+										<th>
+											<p data-tippy-content="Total time without hatchling stage">Growth Time
+												(min)<sup class="ml-1">?</sup>
+											</p>
+										</th>
+									</tr>
+								</thead>
+								<tbody></tbody>
+							</table>
+						</div>
+					</div>
+					<div class="content-style mt-5">
+						<h3>Credits</h3>
+						<p class="mb-0">Data was taken from:</p>
+						<ul class="mt-0">
+							<li><a href="https://docs.google.com/spreadsheets/d/1LNIsS0NXxledmO4sYN8v7dmx5AnHIslJloyhKI9kKv8"
+									target="_blank">Stats Spreadsheet</a>, creator <a
+									href="https://www.reddit.com/user/TSND_" target="_blank">TSND</a>
+							</li>
+							<li><a href="https://docs.google.com/document/d/1d_oHdkpVDHkXp3B4jyB6J_JxK0bytIWO-qFlqsXkC38"
+									target="_blank">Growth Times doc</a>, creator <a
+									href="javascript:void(0)">hypno#0828</a>
+							</li>
+						</ul>
+						<p>Icons made by <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a>
+							from <a href="https://www.flaticon.com" target="_blank">flaticon.com</a>
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+            <div class="wrap">
+                <div class="row align-items-center text-center">
+                    <div class="col-sm text-sm-left">
+                        <div class="footer__copyright">Inspired on <a href="https://www.theisledamage.com"
+                                target="_blank">the isle damage calculator</a> and <a
+                                href="https://antroll.github.io/the-isle-info/" target="_blank">the isle info</a>©
+                            <script>document.write(new Date().getFullYear())</script>
+                            MIT License
+                        </div>
+                        <div class="col-sm-auto my-2 my-sm-0"><a class="d-inline-flex align-items-center donate-btn"
+                                href="//paypal.me/antroll" target="_blank" data-tippy-content="via Paypal"
+                                data-tippy-placement="right">Support author <svg class="svg-icon ml-2 donate-btn__icon">
+                                    <use xlink:href="img/theme/sprite.symbol.svg#si-heart" />
+                                </svg></a>
+                        </div>
+                        <div class="col-sm text-sm-right">
+                            <div class="d-inline-flex align-items-center footer__created">Made by -<a
+                                    class="flex-shrink-0 ml-1" href="https://github.com/Antroll"
+                                    target="_blank">Lzhenry666</a>
+                                <a class="ml-3 flex-shrink-0 footer__github"
+                                    href="https://github.com/Antroll/the-isle-info" target="_blank"
+                                    data-tippy-content="Repository on Github">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="img/theme/sprite.symbol.svg" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+	</div>
+	<script
+		src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CObject.assign%2CArray.from%2CURLSearchParams"></script>
+	<script src="scripts/vendors.js?3213122"></script>
+	<script  type="module" src="scripts/main.js?3213122"></script>
+	<script type="module" src="index.js"></script>
+    <script type="module" src="scripts/stats.js"></script>
+
+</body>
+
+</html>
