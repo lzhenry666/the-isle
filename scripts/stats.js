@@ -1,4 +1,4 @@
-import {dinos}  from '../index.js';
+import {dinos}  from './dmg.js';
 
 
 

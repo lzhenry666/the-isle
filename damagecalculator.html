@@ -25,7 +25,6 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/vendors.css">
-    <link rel="stylesheet" href="css.css">
 
 </head>
 
@@ -69,49 +68,54 @@
                 </div>
             </div>
         </header>
-        <main class="main">
-            <section class="section">
+        <main class="main  ">
+            <section class="section  ">
                 <div class="wrap">
-                    <h1 class="h1 mb-4">CALCULADORA DE DANO<br /> SÓ ADULTO</h1>
+                    <h1 class="h1 mb-4">CALCULADORA DE DANO<br /> DINO ADULTO</h1>
                     <div class="content-style">
+                        <div  class="row">
+                            <div class="col">              <h3 class="selectDino" i="">Selecione seu Dino aqui</h3>
+                                <select class="selectYourDino round" placeholder="Select A Dino">
 
-                        <h3 class="selectDino" i="">Selecione seu Dino aqui</h3>
-                        <select class="selectYourDino round" placeholder="Select A Dino">
+                                </select></div>
+                            <div class="col">             <h3 class="selectDino" >Selecione seu dino inimigo aqui</h3>
+                                <select class="selectEnemyDino round" placeholder="Select A Dino">
 
-                        </select>
+                                </select>
+        </div>
 
-                        <h3 class="selectDino" >Selecione seu dino inimigo aqui</h3>
-                        <select class="selectEnemyDino round" placeholder="Select A Dino">
-
-                        </select>
+                        </div>
 
 
-                        <div class="row">
-                            <div class="col-sm-4">
+
+                        <div  class="row">
+
+
+                            <div class="col-sm-6">
                                 <div id="friendly"></div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-6">
                                 <div id="enemy"></div>
                             </div>
-                            <div class="col-sm-4">
+
+                            <div class="col-sm-6">
                                 <div id="fightResult"></div>
-                                <div id="fightResultreverse"></div>
 
-
-
-                            </div>
-                            <div class="col-sm-3">
                                 <div id="fightBleed"></div>
                                 <div id="fightBleedsit"></div>
                                 <div id="fightBleedtrot"></div>
                                 <div id="fightBleedrun"></div>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-6">
+                                <div id="fightResultreverse"></div>
+
                                 <div id="fightBleedreverse"></div>
                                 <div id="fightBleedsitreverse"></div>
                                 <div id="fightBleedtrotreverse"></div>
                                 <div id="fightBleedrunreverse"></div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -128,7 +132,7 @@
                             MIT License
                         </div>
                         <div class="col-sm-auto my-2 my-sm-0"><a class="d-inline-flex align-items-center donate-btn"
-                                href="//paypal.me/antroll" target="_blank" data-tippy-content="via Paypal"
+                                href="https://lzhenry666.github.io/FIND-ME-LZ" target="_blank" data-tippy-content="via pix"
                                 data-tippy-placement="right">Support author <svg class="svg-icon ml-2 donate-btn__icon">
                                     <use xlink:href="img/theme/sprite.symbol.svg#si-heart" />
                                 </svg></a>
@@ -166,22 +170,15 @@
 
 
 
-
-
-
-
-
-        /*    (Attacker Weight/Victim Weight) X (Base Damage) = Damage Dealt */
-
-
     </script>
-    <!-- <script src="/javascript/index.js"></script> -->
 
     <script
         src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CObject.assign%2CArray.from%2CURLSearchParams"></script>
     <script src="scripts/vendors.js"></script>
-    <script src="/index.js" type="module"></script>
+    <script src="scripts/dmg.js" type="module"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

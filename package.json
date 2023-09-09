@@ -1,5 +1,5 @@
 {
-  "name": "tidmgcalc",
+  "name": "the_isle_tricks",
   "version": "1.0.0",
   "description": "the isle dmg calculator",
   "main": "index.js",
@@ -7,12 +7,19 @@
   "scripts": {
     "test": "test",
     "start": "node index.js"
-
   },
   "keywords": [
     "the",
     "isle"
   ],
   "author": "lzhenry666",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzhenry666/the-isle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lzhenry666/the-isle/issues"
+  },
+  "homepage": "https://github.com/lzhenry666/the-isle#readme"
 }

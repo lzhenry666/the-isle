@@ -4,7 +4,10 @@
  */
 html { font-size: 16px; -webkit-font-smoothing: antialiased; }
 
-html, body { height: 100%; }
+html, body { height: 100%;     background-color: rgb(0,159,214);
+  font: bold 1em/100% "Helvetica Neue", Arial, sans-serif;
+  padding: 2em 0;
+  text-align: center;}
 
 input, textarea, button { box-shadow: none; }
 
@@ -35,7 +38,7 @@ h2, .h2 { font-size: 1.38em; letter-spacing: 0.04em; font-weight: 600; }
 h3, .h3 { font-size: 1.13em; letter-spacing: 0.04em; font-weight: 600; }
 @media (min-width: 768px) { h3, .h3 { font-size: 1.13em; } }
 
-.content-style img, .content-style picture { display: block; max-width: 100%; height: auto; margin: 1em auto; }
+.content-style img, .content-style picture { display: block; max-width: 100%; height: auto; margin: 0 auto; }
 .content-style a { text-decoration: underline; color: #007bff; }
 .content-style a:hover { text-decoration: none; }
 .content-style p { margin: 1rem 0; }
@@ -461,3 +464,245 @@ span.error { color: #E94C3D; }
 
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+
+
+
+
+select.round {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    radial-gradient(#ddd 70%, transparent 72%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.round:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    radial-gradient(gray 70%, transparent 72%);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+
+
+
+
+
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+#container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  perspective: 1000px;
+}
+
+.card {
+  cursor: pointer;
+  width: 22rem;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: #772f1a;
+  background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/theme/unnamed.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  z-index: 99;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+  background-color: #000;
+  z-index: 1;
+
+}
+
+
+
+
+
+
+
+.card .monster-name {
+  width: 100%;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: -4px -4px 4px rgba(255, 255, 255, 1),
+              -4px -4px 4px rgba(255, 255, 255, .5),
+              inset 1px 1px 2px rgba(255, 255, 255, .1),
+              2px 2px 5px rgba(0, 0, 0, .15);
+}
+.card .monster-name h2 {
+  color: #126f97;
+  font-size: 18px;
+  margin: 0;
+}
+.card .monster-name h2 span {
+  font-size: 14px;
+}
+.card .monster-name .attribute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+              -2px -2px 5px rgba(255, 255, 255, .5),
+              inset 2px 2px 4px rgba(255, 255, 255, .1),
+              2px 2px 8px rgba(0, 0, 0, .15);
+}
+.card .monster-name .attribute img {
+  width: 15px;
+
+}
+.card .level {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items:self-start;
+  justify-content: flex-start;
+  padding: 5px 10px;
+
+
+}
+
+.card .level img {
+  width: 1.2rem;
+
+}
+
+.card .monster-image {
+  width: 16rem;
+  height: 16rem;
+  margin-top: 15px;
+  padding: 12px 12px 7px 12px;
+  border-radius: 5px;
+
+  box-sizing: border-box;
+  border: 0.5rem solid #1C1F4C;
+}
+.card .monster-image img {
+  width: 14rem;
+  height: 12rem;
+}
+.card .description {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: -4px -4px 4px rgba(255, 255, 255, 1),
+              -4px -4px 4px rgba(255, 255, 255, .5),
+              inset 1px 1px 2px rgba(255, 255, 255, .1),
+              2px 2px 5px rgba(0, 0, 0, .15);
+  box-sizing: border-box;
+}
+.card .description .type {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  margin-bottom: 5px;
+}
+.card .description .atk-def {
+  margin-top: 10px;
+  padding-top: 5px;
+  border-top: solid 1px #d8d8d8;
+  font-size: 12px;
+  text-align: right;
+}
+
+
+.card:hover p,
+.card:hover h2,
+.card:hover img {
+  transform: scale(1.1);
+  word-wrap: break-word;
+}
+
+
+.diet-icon {
+  font-size: 2em; /* Ajuste o tamanho conforme necessário */
+}
+
+p {
+  margin: 0;
+}

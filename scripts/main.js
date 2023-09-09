@@ -31,8 +31,52 @@ var APP = {
       APP.tableSort(),
       APP.gameModSwitcher(),
       APP.tableVerticalHighlight(),
-      APP.modalGallery();
+      APP.modalGallery(),
+      APP.translate();
   },
+  translate: function() {
+    const googleTranslateElement = document.createElement("div");
+    googleTranslateElement.id = "google_translate_element";
+    googleTranslateElement.style.display = "none";
+    document.body.appendChild(googleTranslateElement);
+
+    const selectElement = document.createElement("select");
+    selectElement.classList.add("selectpicker");
+    selectElement.setAttribute("data-width", "fit");
+    selectElement.style.position = "fixed";
+    selectElement.style.top = "0";
+    selectElement.style.right = "0";
+    selectElement.style.zIndex = "9999";
+    selectElement.addEventListener("change", function() {
+        translateLanguage(this.value);
+    });
+    document.body.appendChild(selectElement);
+
+
+    // Aqui você deve adicionar todas as opções ao elemento select
+    const options = ["Afrikaans", "Albanian", /* demais idiomas... */];
+    for(let option of options) {
+        const optionElement = document.createElement("option");
+        optionElement.value = option;
+        optionElement.textContent = option;
+        selectElement.appendChild(optionElement);
+    }
+
+
+    // Função de inicialização do Google Translate
+    window.googleTranslateElementInit = function() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en'
+        }, 'google_translate_element');
+    };
+
+    // Função para alterar o idioma
+    window.translateLanguage = function(language) {
+        const googleTranslate = document.querySelector(".goog-te-combo");
+        googleTranslate.value = language;
+        googleTranslate.dispatchEvent(new Event("change"));
+    };
+},
   getClipboardText: function (e) {
     navigator.clipboard
       .readText()
